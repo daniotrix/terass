@@ -14,10 +14,10 @@ constructor (
 
   canActivate() {
 if ( this._usuarioService.isLoggedIn() ) {
-  console.log('Paso el guard');
+  // console.log('Paso el guard');
   return true;
 } else {
-  console.log('Bloqueado por el guard');
+  // console.log('Bloqueado por el guard');
   this.router.navigate(['/login']);
   return false;
 }
